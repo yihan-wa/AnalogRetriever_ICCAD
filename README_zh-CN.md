@@ -2,6 +2,7 @@
 
 [论文（ICCAD 2026）](https://doi.org/10.1145/3831252.3834253) ·
 [arXiv](https://arxiv.org/abs/2604.23195) ·
+[项目主页](https://yihan-wa.github.io/AnalogRetriever/) ·
 [数据集](https://huggingface.co/datasets/eulermaxwell/AnalogRetriever-data) ·
 [模型权重](https://huggingface.co/eulermaxwell/AnalogRetriever) ·
 [在线演示](https://huggingface.co/spaces/eulermaxwell/AnalogRetriever) ·
