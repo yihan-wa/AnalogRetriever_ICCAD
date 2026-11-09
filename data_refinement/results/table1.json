@@ -1,0 +1,29 @@
+{
+  "note": "Recorded results of the refinement run that produced the released dataset (eulermaxwell/AnalogRetriever-data@0c053b6). That run used an earlier implementation of the pipeline; see data_refinement/README.md.",
+  "table": [
+    {
+      "stage": "Original Masala-CHAI",
+      "triplets": 6069,
+      "compile": 22.0,
+      "dc_pass": 11.4
+    },
+    {
+      "stage": "+ Stage 1 (Initial Repair)",
+      "triplets": 6371,
+      "compile": 99.2,
+      "dc_pass": 74.1
+    },
+    {
+      "stage": "+ Stage 2 (Feedback Refinement)",
+      "triplets": 6371,
+      "compile": 99.97,
+      "dc_pass": 99.7
+    },
+    {
+      "stage": "Passing both checks",
+      "triplets": 6354,
+      "compile": 100.0,
+      "dc_pass": 100.0
+    }
+  ]
+}

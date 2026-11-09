@@ -1,0 +1,29 @@
+# Dataset (download from Hugging Face, see README)
+/Masala-Chai
+hf_data/
+*.csv
+
+# Data refinement inputs and outputs
+data_refinement/raw_masala_chai/
+data_refinement/output/
+
+# Generated caches, checkpoints and logs
+processed/
+checkpoints/
+results/logs/
+.cache/
+*.pth
+*.pt
+*.log
+
+# Python and environments
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+.env
+.env.*
+.DS_Store

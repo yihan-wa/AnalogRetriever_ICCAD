@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "analogretriever"
+version = "1.0.0"
+description = "AnalogRetriever: cross-modal retrieval of analog circuits across schematics, descriptions and SPICE netlists (ICCAD 2026)"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

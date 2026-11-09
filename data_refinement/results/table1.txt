@@ -1,0 +1,6 @@
+Table 1. Dataset quality before and after refinement.
+Stage                              # Triplets  Compile (%)  DC Pass (%)
+Original Masala-CHAI                    6,069         22.0         11.4
++ Stage 1 (Initial Repair)              6,371         99.2         74.1
++ Stage 2 (Feedback Refinement)         6,371        99.97         99.7
+Passing both checks                     6,354        100.0        100.0

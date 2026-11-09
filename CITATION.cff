@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "If you use this code or dataset, please cite the ICCAD 2026 paper."
+title: "AnalogRetriever: Learning Cross-Modal Representations for Analog Circuit Retrieval"
+type: software
+repository-code: "https://github.com/yihan-wa/AnalogRetriever_ICCAD"
+license: MIT
+authors:
+  - family-names: Wang
+    given-names: Yihan
+  - family-names: Li
+    given-names: Lei
+  - family-names: Lai
+    given-names: Yao
+  - family-names: Wang
+    given-names: Jing
+  - family-names: Lu
+    given-names: Yan
+preferred-citation:
+  type: conference-paper
+  title: "AnalogRetriever: Learning Cross-Modal Representations for Analog Circuit Retrieval"
+  authors:
+    - family-names: Wang
+      given-names: Yihan
+    - family-names: Li
+      given-names: Lei
+    - family-names: Lai
+      given-names: Yao
+    - family-names: Wang
+      given-names: Jing
+    - family-names: Lu
+      given-names: Yan
+  collection-title: "IEEE/ACM International Conference on Computer-Aided Design (ICCAD '26)"
+  publisher:
+    name: ACM
+  year: 2026
+  doi: "10.1145/3831252.3834253"

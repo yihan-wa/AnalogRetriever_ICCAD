@@ -1,0 +1,50 @@
+{
+  "paper_doi": "10.1145/3831252.3834253",
+  "dataset": {
+    "repo_id": "eulermaxwell/AnalogRetriever-data",
+    "revision": "0c053b6580315d8a89c629d67994a6da4575a17f",
+    "subfolder": "iccad2026",
+    "triplets": 6371,
+    "train": 5371,
+    "test": 1000,
+    "split_seed": 42
+  },
+  "checkpoints": {
+    "analogretriever": {
+      "model": "AnalogRetriever",
+      "repo_id": "eulermaxwell/AnalogRetriever",
+      "revision": "51ee703160083a82bb62eaadcbcf58efcfd73eaf",
+      "filename": "analogretriever.pth",
+      "size_bytes": 1764336017,
+      "sha256": "7a700f132f426b9cbe28dbf2ddb9fc2d8cb65fe73d16232fba7f6a991f826edc"
+    },
+    "tic_rgcn": {
+      "model": "TIC (RGCN)",
+      "repo_id": "eulermaxwell/AnalogRetriever",
+      "revision": "51ee703160083a82bb62eaadcbcf58efcfd73eaf",
+      "filename": "tic_rgcn.pth",
+      "size_bytes": 1764332650,
+      "sha256": "ff2f3b2e487debcd8e7660fc9ea10f60f12c466cf8d3d66ed9fd5ce7d6369390"
+    },
+    "tic_gcn": {
+      "model": "TIC (GCN)",
+      "repo_id": "eulermaxwell/AnalogRetriever",
+      "revision": "51ee703160083a82bb62eaadcbcf58efcfd73eaf",
+      "filename": "tic_gcn.pth",
+      "size_bytes": 1722388045,
+      "sha256": "fb830c29751a8deda88f1b494c0e949ca488db32bafa033408881780bab72831"
+    },
+    "ti": {
+      "model": "TI",
+      "repo_id": "eulermaxwell/AnalogRetriever",
+      "revision": "51ee703160083a82bb62eaadcbcf58efcfd73eaf",
+      "filename": "ti.pth",
+      "size_bytes": 1710714472,
+      "sha256": "824da6bd7f83c165a947b59f32cd923cf6b5961258d9b69a9d5bf1056ddbec1c"
+    }
+  },
+  "files_sha256": {
+    "splits/train_ids.txt": "ccda04af2917d1e0d5c1aa6aa57e5e3433e6ca40b71281e1ea37336952db91f3",
+    "splits/test_ids.txt": "1fe28cf9d119e3d3d0d056cefd37fafb2ea2ee2ec0c5dc1c80d9a2579a0a8f59"
+  }
+}

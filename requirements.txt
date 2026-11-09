@@ -1,0 +1,18 @@
+# Install a PyTorch build matching your CUDA version first (https://pytorch.org/get-started/locally/).
+torch>=2.1
+torchvision
+torch-geometric>=2.4
+transformers>=4.51,<5
+accelerate
+scikit-learn
+pandas
+numpy
+Pillow
+tqdm
+ftfy
+regex
+git+https://github.com/openai/CLIP.git@d05afc436d78f1c48dc0dbf8e5980a9d471f35f6
+
+# Data refinement and downloads
+requests>=2.31
+huggingface_hub>=0.34

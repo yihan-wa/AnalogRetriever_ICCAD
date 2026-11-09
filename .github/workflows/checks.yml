@@ -1,0 +1,31 @@
+name: Tests
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  standard-library:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m compileall -q .
+      - run: python -m unittest discover -s tests -v
+      - run: python scripts/validate_release.py
+      - run: bash -n scripts/run_experiments.sh scripts/install_env.sh data_refinement/run_refinement.sh
+  cpu:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: sudo apt-get update && sudo apt-get install -y ngspice
+      - run: python -m pip install 'torch>=2.1' torchvision --index-url https://download.pytorch.org/whl/cpu
+      - run: python -m pip install 'torch-geometric>=2.4' pandas Pillow tqdm
+      - run: python -m pip install 'git+https://github.com/openai/CLIP.git@d05afc436d78f1c48dc0dbf8e5980a9d471f35f6'
+      - run: PYTHONPATH=src python -c "from analogretriever.training import train_bimodal, train_trimodal, train_curriculum; from analogretriever.evaluation import evaluate_retrieval, evaluate_clip, evaluate_crop, evaluate_chatls, evaluate_nettag"
+      - run: python -m unittest discover -s tests -v
