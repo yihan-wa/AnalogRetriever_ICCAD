@@ -182,6 +182,26 @@ Table 3) are not part of this repository.
 Tests run with `python3 -m unittest discover -s tests`; tests that need
 PyTorch, PyG or Ngspice are skipped when those are not installed.
 
+## Limitations and ongoing work
+
+AnalogRetriever is an early step toward cross-modal analog circuit retrieval,
+and the current framework still has many limitations. We are continuing to
+improve it, including but not limited to:
+
+- **Data**: enlarging and diversifying the dataset beyond the current 6,371
+  mostly textbook-style circuits, for example toward mixed-signal, RF and
+  power-management designs.
+- **Method**: improving the netlist representation, the encoders and the
+  training strategy.
+- **Evaluation**: adopting a more rigorous and convincing evaluation, such as
+  splits by circuit family, a test set kept separate from model selection,
+  relevance judged by circuit function rather than exact pairs, and results
+  over multiple training runs.
+
+Questions, bug reports and suggestions are very welcome; please open an
+[issue](https://github.com/yihan-wa/AnalogRetriever_ICCAD/issues) and we will
+keep improving the code and documentation.
+
 ## Citation
 
 ```bibtex
